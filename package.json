@@ -1,0 +1,19 @@
+{
+  "name": "myportfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal portfolio site",
+  "scripts": {
+    "dev": "concurrently -k \"npm:tw:watch\" \"npm:serve\"",
+    "serve": "serve -l 5500 .",
+    "start": "npm run serve",
+    "tw:watch": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/tailwind.build.css --watch",
+    "tw:build": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/tailwind.build.css --minify",
+    "build": "npm run tw:build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "serve": "^14.2.4",
+    "tailwindcss": "^3.4.17"
+  }
+}
