@@ -1,18 +1,18 @@
 import { sectionIntro } from "./shared.js";
 
 function renderFilters(projects) {
-    const tags = [...new Set(projects.flatMap((project) => project.tech))];
-    const filterButtons = tags
-        .map(
-            (tag) => `
+  const tags = [...new Set(projects.flatMap((project) => project.tech))];
+  const filterButtons = tags
+    .map(
+      (tag) => `
             <button type="button" class="filter-chip" data-filter="${tag}" aria-label="Filter projects by ${tag}">
                 ${tag}
             </button>
-        `
-        )
-        .join("");
+        `,
+    )
+    .join("");
 
-    return `
+  return `
         <div class="filters-wrap reveal" role="toolbar" aria-label="Project filters">
             <button type="button" class="filter-chip active" data-filter="all" aria-label="Show all projects">All</button>
             ${filterButtons}
@@ -21,9 +21,9 @@ function renderFilters(projects) {
 }
 
 function renderProjectCards(projects) {
-    return projects
-        .map(
-            (project) => `
+  return projects
+    .map(
+      (project) => `
             <article class="project-card reveal" data-tech="${project.tech.join("|")}" aria-label="Project ${project.title}">
                 <img src="${project.image}" alt="${project.alt}" loading="lazy" />
                 <div class="project-content">
@@ -39,13 +39,13 @@ function renderProjectCards(projects) {
                     </div>
                 </div>
             </article>
-        `
-        )
-        .join("");
+        `,
+    )
+    .join("");
 }
 
 function renderProjectModal() {
-    return `
+  return `
         <div id="project-modal" class="project-modal" aria-hidden="true">
             <div class="project-modal-backdrop" data-modal-close="true"></div>
             <div class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
@@ -65,15 +65,15 @@ function renderProjectModal() {
 }
 
 export function ProjectsSection(projects) {
-    return `
+  return `
         <section id="projects" class="section-wrap" aria-labelledby="projects-title">
             <div class="layout-wrap">
                 ${sectionIntro({
-                    kicker: "Projects",
-                    title: "Selected projects",
-                    description:
-                        "Filter by stack, inspect implementation details, and explore how each product was shaped from concept to delivery.",
-                    titleId: "projects-title"
+                  kicker: "Projects",
+                  title: "Selected projects",
+                  description:
+                    "Filter by stack, inspect implementation details, and explore how each product was shaped from concept to delivery.",
+                  titleId: "projects-title",
                 })}
                 ${renderFilters(projects)}
                 <div class="project-grid">

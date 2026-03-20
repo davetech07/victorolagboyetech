@@ -1,20 +1,20 @@
 export function HeroSection(data) {
-    const metrics = data.metrics
-        .map(
-            (item) => `
+  const metrics = data.metrics
+    .map(
+      (item) => `
             <li class="metric-card reveal">
                 <p class="metric-value">${item.value}</p>
                 <p class="metric-label">${item.label}</p>
             </li>
-        `
-        )
-        .join("");
+        `,
+    )
+    .join("");
 
-    const signature = data.devSignature.lines
-        .map((line) => `<li><code>${line}</code></li>`)
-        .join("");
+  const signature = data.devSignature.lines
+    .map((line) => `<li><code>${line}</code></li>`)
+    .join("");
 
-    return `
+  return `
         <section id="home" class="hero layout-wrap" aria-labelledby="hero-title">
             <div class="hero-copy">
                 <p class="section-kicker reveal">Portfolio 2026</p>

@@ -1,15 +1,15 @@
 import { sectionIntro, renderSkillPills } from "./shared.js";
 
 export function AboutSection(data, skills) {
-    return `
+  return `
         <section id="about" class="section-wrap" aria-labelledby="about-title">
             <div class="layout-wrap section-grid">
                 <div>
                     ${sectionIntro({
-                        kicker: "About",
-                        title: "Design-minded development, built for real users",
-                        description: data.about,
-                        titleId: "about-title"
+                      kicker: "About",
+                      title: "Design-minded development, built for real users",
+                      description: data.about,
+                      titleId: "about-title",
                     })}
                 </div>
                 <div class="about-card reveal">

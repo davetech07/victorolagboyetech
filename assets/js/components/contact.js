@@ -1,16 +1,16 @@
 import { sectionIntro, renderSocialLinks } from "./shared.js";
 
 export function ContactSection(contactLinks, contactForm) {
-    return `
+  return `
         <section id="contact" class="section-wrap" aria-labelledby="contact-title">
             <div class="layout-wrap contact-shell">
                 <div class="contact-card">
                     ${sectionIntro({
-                        kicker: "Contact",
-                        title: "Have an idea? Let us build it with clarity",
-                        description:
-                            "Open to freelance, full-time, and collaboration opportunities. Reach out with your product goals and timeline.",
-                        titleId: "contact-title"
+                      kicker: "Contact",
+                      title: "Have an idea? Let us build it with clarity",
+                      description:
+                        "Open to freelance, full-time, and collaboration opportunities. Reach out with your product goals and timeline.",
+                      titleId: "contact-title",
                     })}
                     <form id="contact-form" class="contact-form reveal" action="${contactForm.endpoint}" method="POST" novalidate>
                         <input type="hidden" name="_subject" value="New portfolio inquiry" />

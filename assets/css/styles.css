@@ -690,7 +690,7 @@ html[data-theme="dark"] .site-header {
 }
 
 body.theme-transition,
-body.theme-transition * ,
+body.theme-transition *,
 body.theme-transition *::before,
 body.theme-transition *::after {
     transition:
@@ -808,6 +808,7 @@ body.theme-transition *::after {
 }
 
 @keyframes float-panel {
+
     0%,
     100% {
         transform: translateY(0);
@@ -841,6 +842,7 @@ body.theme-transition *::after {
 }
 
 @media (max-width: 1024px) {
+
     .hero,
     .section-grid,
     .contact-shell {
