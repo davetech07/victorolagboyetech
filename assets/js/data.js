@@ -115,6 +115,26 @@ export const projects = [
     liveUrl: "https://secure-notes-six.vercel.app/",
     codeUrl: "https://github.com/davetech07",
   },
+  {
+    id: "lautech-chapel-website",
+    title: "LAUTECH Chapel Website",
+    description:
+      "A multi-page church website for LAUTECH Interdenominational Chapel featuring programs, ministry units, leadership profiles, and contact flows.",
+    longDescription:
+      "Built to present chapel information clearly across desktop and mobile, with structured navigation for weekly/monthly programs, unit pages, media access, and giving/contact touchpoints. The implementation combines reusable design tokens and component styles with lightweight JavaScript modules for interactions like animated reveals, counters, gallery lightbox, and content utilities.",
+    image: "https://lautechchapel.org.ng/assets/img/bg_image_1.png",
+    alt: "LAUTECH Chapel homepage hero section",
+    tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    year: "2026",
+    role: "Frontend Developer",
+    highlights: [
+      "Implemented a full multi-page information architecture for programs, leaders, ministry units, and media",
+      "Built a consistent design system layer with reusable CSS variables and component styles",
+      "Added interactive UX modules including scroll animations, counters, gallery lightbox, and enhanced navigation behavior",
+    ],
+    liveUrl: "https://lautechchapel.org.ng",
+    codeUrl: "https://github.com/davetech07/Lautech-Chapel-Website.git",
+  },
 ];
 
 export const contactForm = {
