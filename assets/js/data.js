@@ -144,7 +144,7 @@ export const projects = [
       "Built to present event information clearly across desktop and mobile, with structured navigation for daily schedules, speaker profiles, registration flows, and contact touchpoints. The implementation combines reusable design tokens and component styles with lightweight JavaScript modules for interactions like animated reveals, counters, gallery lightbox, and content utilities.",
     image: "assets/grad.png",
     alt: "Graduate Accelerate 2026 event hero section",
-    tech: ["HTML", "CSS", "JavaScript", "Vanilla JS", "Vite"],
+    tech: ["HTML", "CSS", "Vanilla JS", "Vite"],
     year: "2026",
     role: "Frontend Developer",
     highlights: ["Implemented a full multi-page information architecture for sessions, speakers, and registration", "Built a consistent design system layer with reusable CSS variables and component styles", "Added interactive UX modules including scroll animations, counters, gallery lightbox, and enhanced navigation behavior"],
